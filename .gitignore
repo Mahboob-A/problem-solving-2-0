@@ -1,44 +1,41 @@
-# VS Code
-.vscode/
+# ---- C/C++ build artifacts ----
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+*.dylib
+*.lib
 
-# Python
+# Ignore compiled binaries with no extension (like 'basics' from g++)
+# Matches any file without a dot in its name
+*[^.]*
+
+# ---- Python build artifacts ----
 __pycache__/
 *.pyc
 *.pyo
-.python-version
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.mypy_cache/
+.pytest_cache/
+.tox/
+.venv/
 venv/
 env/
-.env
 
-# C/C++
-*.o
-*.out
-*.exe
-a.out
-*.obj
-*.lib
-*.so
-*.dll
-*.class
+# ---- VSCode ----
+.vscode/
+.history/
+*.code-workspace
 
-# General
-# Ignore all files without an extension.
-# First, ignore all files and directories.
-*
-# Then, re-include files with an extension.
-!*.*
-# Also, re-include directories so we can track files inside them.
-!*/
-
-# Specific files to not ignore (e.g., README, LICENSE, etc.)
-# You might need to add specific files here that don't have an extension
-!README
-!LICENSE
-!Makefile
-
-# Git-specific files to ignore
-.git
-*~
-*.swp
+# ---- OS / Misc ----
 .DS_Store
+Thumbs.db
 
