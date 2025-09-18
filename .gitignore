@@ -1,4 +1,10 @@
-# ---- C/C++ build artifacts ----
+# Ignore compiled binaries generated from C/C++ sources
+# Rule: if a file has no extension, but there exists a .c or .cpp file with the same basename → ignore it
+
+# Ignore "a.out" (default g++ output)
+a.out
+
+# General C/C++ build artifacts
 *.o
 *.obj
 *.exe
@@ -9,11 +15,7 @@
 *.dylib
 *.lib
 
-# Ignore compiled binaries with no extension (like 'basics' from g++)
-# Matches any file without a dot in its name
-*[^.]*
-
-# ---- Python build artifacts ----
+# Python build artifacts
 __pycache__/
 *.pyc
 *.pyo
@@ -30,12 +32,18 @@ build/
 venv/
 env/
 
-# ---- VSCode ----
+# VSCode
 .vscode/
 .history/
 *.code-workspace
 
-# ---- OS / Misc ----
+# OS / Misc
 .DS_Store
 Thumbs.db
+
+
+* 
+!*.*
+!README
+!LICENSE
 
