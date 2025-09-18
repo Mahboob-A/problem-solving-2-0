@@ -1,0 +1,30 @@
+# VS Code
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.python-version
+venv/
+env/
+.env
+
+# C/C++
+*.o
+*.out
+*.exe
+a.out
+*.obj
+*.lib
+*.so
+*.dll
+*.class
+
+# General
+*~
+*.swp
+.DS_Store
+.git
+
+
